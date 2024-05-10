@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtiCat</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Enter new style sheet here -->
+    <link rel="stylesheet" href="css/itemdetail.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    
+    <div class="page">
+
+        <!-- Header -->
+        <header class="head">
+            <img src="images/no bg logo.PNG" alt="logo" class="logo" id="logo">
+            <div class="top-bar">
+                <div class="search-box">
+                    <form id="searchForm">
+                        <input type="text" placeholder="Search for anything" class="search-bar" name="searchValue">
+                        <input type="submit" style="display: none;">
+                    </form>                    <i class="material-icons">search</i>
+                </div>
+                <button class="signInButton" id="signInBtn">Sign In</button>
+                <div class="drop-down">
+                    <i class="material-icons profile-icon hidden" id="profile-icon" onclick="showDropDown()">account_circle</i>
+                    <div class="drop-down-list hidden" id="drop-down-list"></div>
+                </div>
+       
+            </div>
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="flex">
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="mainpage.html#categories">Categories</a></li>
+                    <li><a href="mainpage.html#about">About Us</a></li>
+                    <li><a href="mainpage.html#contact">Contact Us </a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <hr>
+
+        <main class="main">
+            <!-- Write new content here -->      
+            <p id="item-link"></p>
+            <div class="item-container">
+            </div>      
+        </main>
+
+        <footer class="footer">
+            <!-- Contact -->
+            <section id="contact">
+                <h3>Have a question? Contact Us!</h3>
+
+                <div class="socials">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="https://x.com/articat_?s=21&t=R03n2eSaEpdfP34lExAYdQ" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/articat_2024?igsh=MWZwZGQ3YXVucHk5OQ%3D%3D&utm_source=qr" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+                
+            </section>
+
+            <p>&copy; 2024 ArtiCat</p>
+            
+        </footer>
+    </div>
+    <script src="js/loadData.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/header.js"></script>
+    <!-- Enter the new js script here -->
+    <script src="js/itemDetails.js"></script>
+    <script src="js/buyingItem.js"></script>
+    <script src="js/updateItem.js"></script>
+</body>
+
+</html>

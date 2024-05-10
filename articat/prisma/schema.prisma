@@ -1,0 +1,69 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+model User {
+  username String    @id
+  password String
+  type     String
+  customer Customer?
+  seller   Seller?
+}
+
+model Customer {
+  username        String     @id
+  name            String
+  surname         String
+  shippingAddress String
+  moneyBalance    Float
+  email           String
+  phoneNumber     String
+  user            User       @relation(fields: [username], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  purchase        Purchase[]
+}
+
+model Seller {
+  username    String @id
+  companyName String
+  bankAccount String
+  user        User   @relation(fields: [username], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  items       Item[]
+}
+
+model Item {
+  name        String
+  category    String
+  image       String?
+  price       Float
+  quantity    Int
+  description String
+  featured    Boolean?
+  clicks      Int        @default(0)
+  itemId      String     @id @default(cuid())
+  sellerUN    String
+  seller      Seller     @relation(fields: [sellerUN], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  purchases   Purchase[]
+}
+
+model Purchase {
+  purchaseId String   @id @default(cuid())
+  quantity   Int
+  totalPrice Float
+  date       DateTime
+  itemId     String
+  customerUN String
+  item       Item     @relation(fields: [itemId], references: [itemId], onDelete: Cascade, onUpdate: Cascade)
+  customer   Customer @relation(fields: [customerUN], references: [username], onDelete: Cascade, onUpdate: Cascade)
+}

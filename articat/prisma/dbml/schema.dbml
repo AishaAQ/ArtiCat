@@ -1,0 +1,67 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table User {
+  username String [pk]
+  password String [not null]
+  type String [not null]
+  customer Customer
+  seller Seller
+}
+
+Table Customer {
+  username String [pk]
+  name String [not null]
+  surname String [not null]
+  shippingAddress String [not null]
+  moneyBalance Float [not null]
+  email String [not null]
+  phoneNumber String [not null]
+  user User [not null]
+  purchase Purchase [not null]
+}
+
+Table Seller {
+  username String [pk]
+  companyName String [not null]
+  bankAccount String [not null]
+  user User [not null]
+  items Item [not null]
+}
+
+Table Item {
+  name String [not null]
+  category String [not null]
+  image String
+  price Float [not null]
+  quantity Int [not null]
+  description String [not null]
+  featured Boolean
+  clicks Int [not null, default: 0]
+  itemId String [pk]
+  sellerUN String [not null]
+  seller Seller [not null]
+  purchases Purchase [not null]
+}
+
+Table Purchase {
+  purchaseId String [pk]
+  quantity Int [not null]
+  totalPrice Float [not null]
+  date DateTime [not null]
+  itemId String [not null]
+  customerUN String [not null]
+  item Item [not null]
+  customer Customer [not null]
+}
+
+Ref: Customer.username - User.username [delete: Cascade]
+
+Ref: Seller.username - User.username [delete: Cascade]
+
+Ref: Item.sellerUN > Seller.username [delete: Cascade]
+
+Ref: Purchase.itemId > Item.itemId [delete: Cascade]
+
+Ref: Purchase.customerUN > Customer.username [delete: Cascade]

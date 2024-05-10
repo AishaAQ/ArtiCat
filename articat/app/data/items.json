@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Elegant Pink Vase",
+    "category": "Ceramics",
+    "image": "images/ceramics/pink_vase.png",
+    "price": 32,
+    "quantity": 25,
+    "description": "An elegant ceramic vase, slender and tall, in a soft pastel pink with subtle white accents. The vase features a minimalist design with a smooth, matte finish.",
+    "itemId": "I1",
+    "clicks": 5,
+    "sellerUN": "craftsworld_user"
+  },
+  {
+    "name": "Contemporary Floral Platter",
+    "category": "Ceramics",
+    "image": "images/ceramics/contemporary_floral_platter.png",
+    "price": 27,
+    "quantity": 30,
+    "description": "Contemporary ceramic platter, featuring a pastel pink color with an intricate white floral pattern. The platter is rectangular with slightly curved .",
+    "itemId": "I2",
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Pink Heart Teapot",
+    "category": "Ceramics",
+    "image": "images/ceramics/heart_pink_teapot.png",
+    "price": 35,
+    "quantity": 20,
+    "description": "A ceramic teapot, in a pastel pink color with a minimalistic white heart design. The teapot has a classic shape with a smooth, matte finish.",
+    "itemId": "I3",
+    "featured": true,
+    "sellerUN": "craftsworld_user"
+  },
+  {
+    "name": "Pink Cherry Mug",
+    "category": "Ceramics",
+    "image": "images/ceramics/pink_mug_cerry.png",
+    "price": 22,
+    "quantity": 45,
+    "description": "A sleek ceramic mug in pastel pink, adorned with a minimalistic white cherry design. The mug has a modern, elegant shape with a smooth surface.",
+    "itemId": "I4",
+    "sellerUN": "craftsworld_user"
+  },
+  {
+    "name": "Pink Strawberry Bowl",
+    "category": "Ceramics",
+    "image": "images/ceramics/pink_bowl_strawberry.png",
+    "price": 28,
+    "quantity": 35,
+    "description": "A modern pastel pink bowl with a white strawberry pattern.",
+    "itemId": "I5",
+    "featured": true,
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Green Cherry Plate",
+    "category": "Ceramics",
+    "image": "images/ceramics/green_plate_cherry.png",
+    "price": 27,
+    "quantity": 30,
+    "description": "A chic ceramic plate in pastel green with a minimalist white cherry pattern. The plate is round with a smooth, glossy finish, ideal for serving or as decor",
+    "itemId": "I6",
+    "sellerUN": "craftsworld_user"
+  },
+  {
+    "name": "Yellow Heart Vase",
+    "category": "Ceramics",
+    "image": "images/ceramics/yellow_vase_hearts.png",
+    "price": 32,
+    "quantity": 25,
+    "description": "An artistic ceramic vase, pastel yellow with a simple white heart pattern. The vase is slender, with an elegant, elongated form, ideal for displaying .",
+    "itemId": "I7",
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Lavender Floral Teapot",
+    "category": "Ceramics",
+    "image": "images/ceramics/lavender_teapot_floral.png",
+    "price": 36,
+    "quantity": 20,
+    "description": "A modern ceramic teapot in a gentle pastel lavender, featuring a minimalist white floral design. The teapot has a classic shape with a smooth, matte finish.",
+    "itemId": "I8",
+    "sellerUN": "craftsworld_user"
+  },
+  {
+    "name": "Blue Heart Mug",
+    "category": "Ceramics",
+    "image": "images/ceramics/blue_heart_mug.png",
+    "price": 21,
+    "quantity": 50,
+    "description": "A chic ceramic mug in pastel blue, decorated with a simple white heart pattern. The mug has a contemporary design, with a smooth finish.",
+    "itemId": "I9",
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Pink Floral Mug",
+    "category": "Ceramics",
+    "image": "images/ceramics/pink_leaves_mug.png",
+    "price": 22,
+    "quantity": 45,
+    "description": "A chic pink ceramic mug with a delicate floral design.",
+    "itemId": "I10",
+    "sellerUN": "craftsworld_user"
+  },
+  {
+    "name": "Modern Floral Bowl",
+    "category": "Ceramics",
+    "image": "images/ceramics/green_floral_bowl.png",
+    "price": 28,
+    "quantity": 35,
+    "description": "A contemporary ceramic bowl in a soft pastel green, adorned with minimalist white floral patterns. The bowl has a gentle curve and a matte finish.",
+    "itemId": "I11",
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Lavender Floral Plate",
+    "category": "Ceramics",
+    "image": "images/ceramics/lavender_floral_plate.png",
+    "price": 20,
+    "quantity": 60,
+    "description": "A modern ceramic plate in pastel lavender, featuring a subtle white floral and heart pattern. The plate is round with a smooth, glossy finish.",
+    "itemId": "I12",
+    "featured": true,
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Blue Hearts Mug",
+    "category": "Ceramics",
+    "image": "images/ceramics/blue_hearts_mug.png",
+    "price": 21,
+    "quantity": 50,
+    "description": "- A minimalist ceramic mug in pastel blue with delicate white hearts pattern. The mug has a modern, sleek design with a smooth surface.",
+    "itemId": "I13",
+    "featured": true,
+    "sellerUN": "ceramicart_user"
+  },
+  {
+    "name": "Swan Shaped Pearl Earrings",
+    "category": "Jewelry",
+    "image": "images/jewelry/swan_shaped_pearl_earrings.png",
+    "price": 25.99,
+    "quantity": 30,
+    "description": "Elegant earrings featuring swan-shaped designs adorned with lustrous pearls. Perfect for adding a touch of sophistication to any look.",
+    "itemId": "I24",
+    "featured": true,
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "Elegant Beaded Bracelet",
+    "category": "Jewelry",
+    "image": "images/jewelry/elegant_beaded_bracelet.png",
+    "price": 29.99,
+    "quantity": 50,
+    "description": "A beautiful bracelet adorned with elegant beads, perfect for adding a touch of sophistication to any outfit.",
+    "itemId": "I14",
+    "clicks": 14,
+    "featured": true,
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "Glass Beaded Daisy Bracelet",
+    "category": "Jewelry",
+    "image": "images/jewelry/glass_beaded_daisy_bracelet.png",
+    "price": 19.99,
+    "quantity": 40,
+    "description": "A charming bracelet adorned with glass beads in the shape of daisies. Adds a touch of whimsy to your look.",
+    "itemId": "I16",
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "Elegant Rhinestone Jewelry Set",
+    "category": "Jewelry",
+    "image": "images/jewelry/elegant_rhinestone_jewelry_set.png",
+    "price": 89.99,
+    "quantity": 30,
+    "description": "A stunning jewelry set featuring rhinestones, including a necklace, bracelet, and earrings. Perfect for special occasions.",
+    "itemId": "I15",
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "Flower Design Earrings",
+    "category": "Jewelry",
+    "image": "images/jewelry/hollow_flower_design_earrings.png",
+    "price": 14.99,
+    "quantity": 60,
+    "description": "Delicate earrings featuring a hollow flower design, perfect for everyday wear or special occasions.",
+    "itemId": "I17",
+    "sellerUN": "stellar_designs"
+  },
+  {
+    "name": "Lily Of The Valley Dangle Earrings",
+    "category": "Jewelry",
+    "image": "images/jewelry/lily_of_the_valley_dangle_earrings.png",
+    "price": 24.99,
+    "quantity": 35,
+    "description": "Elegant dangle earrings inspired by the delicate lily of the valley flower. Adds a touch of nature-inspired beauty to any ensemble.",
+    "itemId": "I18",
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "Pink Crystal Flower Earrings",
+    "category": "Jewelry",
+    "image": "images/jewelry/purple_crystal_flower_earrings.png",
+    "price": 17.99,
+    "quantity": 55,
+    "description": "Exquisite earrings featuring purple crystal flowers, adding a pop of color and sparkle to your ensemble.",
+    "itemId": "I20",
+    "featured": true,
+    "sellerUN": "stellar_designs"
+  },
+  {
+    "name": "Rhinestone Stackable Rings",
+    "category": "Jewelry",
+    "image": "images/jewelry/rhinestone_stackable_rings.png",
+    "price": 27.99,
+    "quantity": 25,
+    "description": "Set of stackable rings adorned with sparkling rhinestones, perfect for mixing and matching to create your unique look.",
+    "itemId": "I21",
+    "sellerUN": "stellar_designs"
+  },
+  {
+    "name": "Snowflake Luxury Necklace",
+    "category": "Jewelry",
+    "image": "images/jewelry/snowflake_luxury_necklace.png",
+    "price": 39.99,
+    "quantity": 20,
+    "description": "A luxurious necklace featuring intricate snowflake design, perfect for winter-themed events or adding a touch of elegance to your look.",
+    "itemId": "I22",
+    "sellerUN": "stellar_designs"
+  },
+  {
+    "name": "Star Bracelet",
+    "category": "Jewelry",
+    "image": "images/jewelry/star_bracelet.png",
+    "price": 21.99,
+    "quantity": 35,
+    "description": "A charming bracelet adorned with star-shaped charms, adding a touch of celestial whimsy to your ensemble.",
+    "itemId": "I23",
+    "sellerUN": "stellar_designs"
+  },
+  {
+    "name": "Moon Star Pendant Necklace",
+    "category": "Jewelry",
+    "image": "images/jewelry/moon_star_pendant_necklace.png",
+    "price": 34.99,
+    "quantity": 45,
+    "description": "A celestial-inspired necklace featuring a moon and star pendant. Perfect for those who love astronomy or celestial motifs.",
+    "itemId": "I19",
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "White Flower Hoop Earrings",
+    "category": "Jewelry",
+    "image": "images/jewelry/white_flower_hoop_earrings.png",
+    "price": 19.99,
+    "quantity": 40,
+    "description": "Chic hoop earrings featuring white flower accents, perfect for adding a feminine touch to your ensemble.",
+    "itemId": "I25",
+    "sellerUN": "elegant_jewels"
+  },
+  {
+    "name": "Serenity Sunset",
+    "category": "Paintings",
+    "image": "images/paintings/serenity_sunset.png",
+    "price": 150,
+    "quantity": 2,
+    "description": "A breathtaking landscape painting capturing the tranquil beauty of a sunset over rolling hills and a calm lake.",
+    "itemId": "I26",
+    "sellerUN": "artvista_creations"
+  },
+  {
+    "name": "Whimsical Wonderland",
+    "category": "Paintings",
+    "image": "images/paintings/whimsical_wonderland.png",
+    "price": 250,
+    "quantity": 3,
+    "description": "An enchanting depiction of a magical forest filled with vibrant colors, whimsical creatures, and sparkling fireflies.",
+    "itemId": "I27",
+    "sellerUN": "artvista_creations"
+  },
+  {
+    "name": "Dreamy Seascape",
+    "category": "Paintings",
+    "image": "images/paintings/dreamy_seascape.png",
+    "price": 300,
+    "quantity": 2,
+    "description": "A soothing seascape painting that transports viewers to a peaceful beach at twilight, with gentle waves and a pastel sky.",
+    "itemId": "I28",
+    "clicks": 20,
+    "featured": true,
+    "sellerUN": "artvista_creations"
+  },
+  {
+    "name": "Abstract Harmony",
+    "category": "Paintings",
+    "image": "images/paintings/abstract_harmony.png",
+    "price": 100,
+    "quantity": 2,
+    "description": "A dynamic abstract painting characterized by bold brushstrokes and vibrant colors, evoking a sense of energy and harmony.",
+    "itemId": "I29",
+    "sellerUN": "artvista_creations"
+  },
+  {
+    "name": "Urban Melodies",
+    "category": "Paintings",
+    "image": "images/paintings/urban_melodies.png",
+    "price": 268,
+    "quantity": 4,
+    "description": "A captivating cityscape painting that portrays the rhythm and movement of urban life through bold shapes and vibrant colors.",
+    "itemId": "I30",
+    "clicks": 2,
+    "sellerUN": "artvista_creations"
+  },
+  {
+    "name": "Mystical Moonlit Mountains",
+    "category": "Paintings",
+    "image": "images/paintings/mystical_moonlit_mountains.png",
+    "price": 355,
+    "quantity": 2,
+    "description": "A mystical painting of moonlit mountains shrouded in mist, creating an atmosphere of mystery and tranquility.",
+    "itemId": "I31",
+    "sellerUN": "artvista_creations"
+  },
+  {
+    "name": "Floral Fantasy",
+    "category": "Paintings",
+    "image": "images/paintings/floral_fantasy.png",
+    "price": 220,
+    "quantity": 2,
+    "description": "An imaginative floral painting bursting with colorful blooms, swirling vines, and delicate petals, creating a sense of beauty and wonder.",
+    "itemId": "I32",
+    "sellerUN": "canvas_harmony"
+  },
+  {
+    "name": "Celestial Symphony",
+    "category": "Paintings",
+    "image": "images/paintings/celestial_symphony.png",
+    "price": 345,
+    "quantity": 2,
+    "description": "An ethereal painting inspired by the cosmos, featuring swirling galaxies, shimmering stars, and cosmic nebulae.",
+    "itemId": "I33",
+    "sellerUN": "canvas_harmony"
+  },
+  {
+    "name": "Enchanted Garden",
+    "category": "Paintings",
+    "image": "images/paintings/enchanted_garden.png",
+    "price": 429.99,
+    "quantity": 3,
+    "description": "A whimsical garden painting filled with lush foliage, blooming flowers, and playful butterflies, inviting viewers into a magical realm.",
+    "itemId": "I34",
+    "featured": true,
+    "sellerUN": "canvas_harmony"
+  },
+  {
+    "name": "Rustic Charm",
+    "category": "Paintings",
+    "image": "images/paintings/rustic_charm.png",
+    "price": 555.99,
+    "quantity": 3,
+    "description": "A charming rustic landscape painting capturing the idyllic beauty of a countryside scene, with rolling hills, rustic barns, and winding paths.",
+    "itemId": "I35",
+    "sellerUN": "canvas_harmony"
+  },
+  {
+    "name": "Ethereal Waters",
+    "category": "Paintings",
+    "image": "images/paintings/ethereal_waters.png",
+    "price": 340,
+    "quantity": 2,
+    "description": "A mesmerizing underwater painting depicting a colorful coral reef teeming with exotic marine life, creating a sense of wonder and awe.",
+    "itemId": "I36",
+    "featured": true,
+    "sellerUN": "canvas_harmony"
+  },
+  {
+    "name": "Timeless Elegance",
+    "category": "Paintings",
+    "image": "images/paintings/timeless_elegance.png",
+    "price": 235.99,
+    "quantity": 4,
+    "description": "A timeless portrait painting capturing the grace and elegance of a bygone era, with intricate details and a sense of classical beauty.",
+    "itemId": "I37",
+    "sellerUN": "canvas_harmony"
+  }
+]

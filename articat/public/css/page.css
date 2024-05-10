@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Graphik Webfont", "-apple-system", "Helvetica Neue", "Droid Sans", "Arial", "sans-serif";
+    /* outline: auto; */
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+:root {
+    /* so we can add all colors here */
+    --color--bg: #f8e2e7ee;
+    --color--txt: white;
+    --color--icons: #d65f83;
+
+}
+
+/* using grids for the main layout of the page */
+.page {
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "head"
+        "main"
+        "footer";
+
+    i {
+        color: var(--color--icons);
+        font-size: 2rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .head {
+        width: 100%;
+        grid-area: head;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'img top-bar top-bar'
+            'img nav nav';
+        align-items: center;
+        justify-content: space-evenly;
+        height: 24vh;
+
+        img {
+            grid-area: img;
+            width: 94%;
+            margin-left: 1rem;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        .top-bar {
+
+            display: flex;
+            grid-area: top-bar;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            width: 96%;
+            margin-left: 2rem;
+            padding: 0.5rem;
+
+
+            .search-box {
+
+                margin: 0.5rem 1.5rem 0 0;
+
+                flex-grow: 1;
+                position: relative;
+
+                .search-bar {
+                    padding: 0.7rem;
+                    margin-right: 0.8rem;
+                    width: 100%;
+                    border: 1px solid #181515;
+                    border-radius: 40px;
+
+                }
+
+                i {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 0.2rem 1rem 0rem 1rem;
+                }
+            }
+
+            .signInButton {
+                border: none;
+                margin: 0.5rem 0rem;
+                background-color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 4rem;
+            }
+
+            .signInButton:hover {
+                background-color: var(--color--bg);
+                cursor: pointer;
+            }
+
+            .drop-down {
+
+                position: relative;
+                margin-top: 0.5rem;
+
+                .profile-icon {
+                    font-size: 2.5rem;
+                }
+
+                .profile-icon:hover {
+                    cursor: pointer;
+                }
+
+                .drop-down-list {
+
+                    position: absolute;
+                    z-index: 1;
+                    background-color: var(--color--bg);
+                    min-width: 10rem;
+                    box-shadow: 0 1rem 1rem 0rem rgba(0, 0, 0, 0.2);
+                    right: 0;
+                    border-radius: 0.3rem;
+
+                    a {
+                        border-radius: 0.3rem;
+                        color: black;
+                        padding: 12px 16px;
+                        padding: 1rem;
+                        text-decoration: none;
+                        display: block;
+                    }
+
+                    a:hover {
+                        background-color: var(--color--icons);
+                        color: var(--color--txt);
+                    }
+
+                }
+            }
+
+        }
+
+
+
+        .nav {
+
+
+            grid-area: nav;
+            margin-left: 2rem;
+
+            .flex {
+                list-style: none;
+                display: flex;
+                justify-content: start;
+                gap: 3rem;
+                margin: 0.5rem 0rem 1rem 2.5rem;
+
+                li {
+                    
+                    a {
+                        border-radius: 10rem;
+                        padding: 0.5rem 1rem;
+                        color: rgb(6, 5, 5);
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        background-color: var(--color--bg);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .main {
+        h2 {
+            text-align: center;
+            margin: 2rem 0 1rem 0;
+            font-size: 26px;
+        }
+    }
+}
+
+/* for all h2 fonts in the page  */
+h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+
+/* shadow for all boxes in page */
+.boxshadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 0.3rem;
+    /* additional */
+
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 2%;
+    gap: 0.4rem;
+
+    img {
+
+        width: 110%;
+        height: 20%;
+        margin: 2%;
+        border-radius: 1rem;
+        /* additional */
+
+    }
+}
+
+/* main */
+#title {
+    margin: 0.3rem 1.2rem
+}
+
+.footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color: var(--color--icons);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact {
+        h3 {
+            /* width: 100%; */
+            text-align: center;
+            /* margin: 2rem 0 1rem 0; */
+        }
+    }
+
+    .fa {
+        padding: 1rem;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        color: white;
+    }
+
+    .fa-twitter {
+        color: white;
+    }
+
+    .fa-twitter::before {
+        display: inline-block;
+        width: 1em;
+        height: 1.1em;
+        content: "";
+        background-color: currentColor;
+        -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 -8 26 30" xmlns="http://www.w3.org/2000/svg"><g><path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>') no-repeat center;
+        mask: url('data:image/svg+xml;utf8,<svg viewBox="0 -8 26 30" xmlns="http://www.w3.org/2000/svg"><g><path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>') no-repeat center;
+        background-position: center 3px;
+    }
+
+    .fa-youtube {
+        color: white;
+    }
+
+    .fa-instagram {
+        color: white;
+    }
+
+    .fa-pinterest {
+        color: white;
+    }
+
+}
+
+@media (max-width: 49rem) {
+
+    /* using grids for the main layout of the page */
+    .page {
+
+        .head {
+
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 'img'
+                'top-bar'
+                'nav';
+            height: 35%;
+
+            img {
+                width: 36%;
+                margin-left: 32vw;
+            }
+
+            .top-bar {
+
+                gap: 0rem;
+                width: 95vw;
+                margin-left: 0rem;
+
+
+                .search-box {
+
+                    margin-top: 0rem;
+                    margin-right: 1rem;
+
+
+                    .search-bar {
+                        margin-right: 0rem;
+                    }
+
+                }
+
+                .drop-down {
+                    margin-top: 0rem;
+                }
+
+            }
+
+            .nav {
+
+                margin-left: 0rem;
+
+                .flex {
+
+                    justify-content: space-evenly;
+                    gap: 0rem;
+                    margin-top: 0rem;
+                    margin-left: 0rem;
+                }
+            }
+        }
+
+        .main {
+            input[type="button"] {
+                margin-left: 30%;
+            }
+        }
+    }
+}

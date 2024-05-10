@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* so we can add all colors here */
+  --color--bg: #f8e2e7ee;
+  --color--txt: white;
+  --color--icons: #d65f83;
+
+}
+
+.main {
+
+
+  .purchase-container {
+
+    width: 45%;
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .h2 {
+      margin: 1.6rem 0;
+    }
+
+    .purchase-form {
+      .inputs {
+        margin-bottom: 15px;
+
+        input {
+          margin-top: 5px;
+          width: 100%;
+          padding: 0.5rem;
+          border: 1px solid #c2c2c2;
+          border-radius: 10px;
+        }
+      }
+
+      .buttons {
+
+        display: flex;
+        gap: 1rem;
+
+        .purchase-btn {
+          width: 100%;
+          padding: 5px;
+          border: none;
+          border-radius: 17px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px;
+          border: var(--color--icons) solid;
+          background-color: var(--color--icons);
+          color: var(--color--txt);
+          cursor: pointer;
+          font-size: large;
+
+        }
+
+        .cancel-btn {
+          width: 100%;
+          padding: 5px;
+          border: none;
+          border-radius: 17px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px;
+          border: var(--color--icons) solid;
+          background-color: var(--color--icons);
+          color: var(--color--txt);
+          cursor: pointer;
+          font-size: large;
+
+        }
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 51rem) {
+  .main {
+    .purchase-container {
+      width: 80%;
+    }
+  }
+}

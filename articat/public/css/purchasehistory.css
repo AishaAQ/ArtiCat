@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: auto; */
+}
+
+:root {
+    /* so we can add all colors here */
+    --color--bg: #f8e2e7ee;
+    --color--txt: white;
+    --color--icons: #d65f83;
+
+}
+
+main {
+
+    h2 {
+        margin: 2rem;
+        margin-left: 15%;
+    }
+
+    .item-purchased {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 70%;
+
+        img {
+            width: clamp(10rem, 50vw, 20rem);
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+
+        border: 2px solid black;
+        margin-top: 1rem;
+        border-radius: 1rem;
+
+        .details {
+            flex-grow: 2;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            font-size: larger;
+        }
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    main {
+
+        .item-purchased {
+            flex-direction: column;
+            margin: auto;
+
+            img {
+                align-self: center;
+                padding: 1rem;
+            }
+
+            margin-top: 0.5rem;
+        }
+    }
+}

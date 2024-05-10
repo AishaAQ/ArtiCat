@@ -1,0 +1,28 @@
+{
+  "name": "articat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "cors": "^2.8.5",
+    "cuid": "^3.0.0",
+    "fs-extra": "^11.2.0",
+    "next": "14.2.3",
+    "nextjs-cors": "^2.2.0",
+    "prisma-dbml-generator": "^0.12.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "prisma": "^5.13.0"
+  },
+  "type": "module"
+}

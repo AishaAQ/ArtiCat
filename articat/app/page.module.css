@@ -1,0 +1,172 @@
+
+.noCard{
+  margin: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 7px 15px;
+  border-radius: 1.5rem;
+  height: 9rem;
+}
+
+.twoCards{
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+
+}
+
+.card:first-child {
+  background-color:  #f1c1ccee;
+}
+
+.card:nth-child(2) {
+  background-color: #b6dbeb;
+}
+
+.card:nth-child(3) {
+  background-color:#b7e2d4;
+}
+
+.card:nth-child(4) {
+  background-color: #e0d2e7;
+}
+
+.cardinner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardinner > .card_icon {
+  font-size: 25px;
+}
+
+.maincards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 15px 0;
+}
+.chartp{
+  text-align: center;
+  margin-top: 0.6rem;
+}
+.charttitle{
+  font-size:25px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+
+.itemDetails {
+  /* width: 80%; */
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 4rem;
+  /* border: black; */
+  padding: 0rem 1rem;
+  /* text-align:start; */
+  font-size: 16px;
+
+}
+
+.itemDetails2 {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: left;
+  margin: 1rem;
+  margin-top: 2rem;
+  /* border: black; */
+  padding: 0rem 1rem;
+  /* text-align:justify; */
+  font-size: 16px;
+
+}
+.barChart{
+ 
+  width: 180%;
+}
+
+.top3{
+  display: flex;
+  border: 2px solid rgb(136, 135, 135);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+
+}
+
+.padding{
+  padding-bottom: 2rem;
+}
+
+.top5{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(136, 135, 135);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+
+}
+/* 
+.chartSpace{
+  margin: 0;
+} */
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(136, 135, 135);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 47rem) {
+  .maincards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  
+.top3{
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column; */
+
+}
+.barChart{
+  width: 100%;
+}
+
+.twoCards{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.itemDetails {
+  
+  margin-top: 1rem;
+  
+
+}
+}

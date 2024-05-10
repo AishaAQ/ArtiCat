@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wallet {
+
+        border: 2px solid rgb(115, 113, 113);
+        padding: 3rem;
+        border-radius: 1rem;
+        margin: 3rem;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #faeef1ee;
+        text-align: center;
+
+        img {
+            width: 15vw;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 3rem;
+        }
+    }
+}

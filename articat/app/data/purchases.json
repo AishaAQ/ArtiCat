@@ -1,0 +1,462 @@
+[
+    {
+        "purchaseId": "P1",
+        "quantity": 2,
+        "itemId": "I1",
+        "customerUN": "maria_attili",
+        "totalPrice": 64.0,
+        "date" : "2024-03-29T03:41:59.449Z"
+    },
+    {
+        "purchaseId": "P2",
+        "quantity": 1,
+        "itemId": "I3",
+        "customerUN": "maria_attili",
+        "totalPrice": 35.0,
+        "date" : "2023-10-30T03:43:50.530Z"
+    },
+    {
+        "purchaseId": "P3",
+        "quantity": 3,
+        "itemId": "I5",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date" : "2024-04-30T03:44:52.469Z"
+    },
+    {
+        "purchaseId": "P4",
+        "quantity": 2,
+        "itemId": "I17",
+        "customerUN": "raghad_sk",
+        "totalPrice": 45.98,
+        "date": "2023-05-15T09:30:00.000Z"
+    },
+    {
+        "purchaseId": "P5",
+        "quantity": 1,
+        "itemId": "I12",
+        "customerUN": "raghad_sk",
+        "totalPrice": 19.99,
+        "date": "2023-06-20T11:15:00.000Z"
+    },
+    {
+        "purchaseId": "P6",
+        "quantity": 3,
+        "itemId": "I4",
+        "customerUN": "raghad_sk",
+        "totalPrice": 34.50,
+        "date": "2023-07-05T14:00:00.000Z"
+    },
+    {
+        "purchaseId": "P7",
+        "quantity": 1,
+        "itemId": "I9",
+        "customerUN": "raghad_sk",
+        "totalPrice": 22.99,
+        "date": "2023-08-10T16:45:00.000Z"
+    },
+    {
+        "purchaseId": "P8",
+        "quantity": 2,
+        "itemId": "I3",
+        "customerUN": "raghad_sk",
+        "totalPrice": 39.98,
+        "date": "2023-09-25T10:20:00.000Z"
+    },
+    {
+        "purchaseId": "P9",
+        "quantity": 1,
+        "itemId": "I17",
+        "customerUN": "maisy",
+        "totalPrice": 22.99,
+        "date": "2023-10-30T13:30:00.000Z"
+    },
+    {
+        "purchaseId": "P10",
+        "quantity": 3,
+        "itemId": "I5",
+        "customerUN": "maisy",
+        "totalPrice": 66.0,
+        "date": "2023-11-15T15:00:00.000Z"
+    },
+    {
+        "purchaseId": "P11",
+        "quantity": 2,
+        "itemId": "I12",
+        "customerUN": "maisy",
+        "totalPrice": 39.98,
+        "date": "2023-12-20T11:15:00.000Z"
+    },
+    {
+        "purchaseId": "P12",
+        "quantity": 1,
+        "itemId": "I4",
+        "customerUN": "maisy",
+        "totalPrice": 17.25,
+        "date": "2024-01-05T14:00:00.000Z"
+    },
+    {
+        "purchaseId": "P13",
+        "quantity": 3,
+        "itemId": "I9",
+        "customerUN": "maisy",
+        "totalPrice": 67.47,
+        "date": "2024-02-10T16:45:00.000Z"
+    },
+    {
+        "purchaseId": "P14",
+        "quantity": 1,
+        "itemId": "I3",
+        "customerUN": "maisy",
+        "totalPrice": 21.99,
+        "date": "2024-03-15T10:20:00.000Z"
+    },
+    {
+        "purchaseId": "P15",
+        "quantity": 4,
+        "itemId": "I17",
+        "customerUN": "khader_y",
+        "totalPrice": 91.96,
+        "date": "2024-04-20T13:30:00.000Z"
+    },
+    {
+        "purchaseId": "P16",
+        "quantity": 2,
+        "itemId": "I5",
+        "customerUN": "khader_y",
+        "totalPrice": 56.0,
+        "date": "2023-05-25T15:00:00.000Z"
+    },
+    {
+        "purchaseId": "P17",
+        "quantity": 1,
+        "itemId": "I12",
+        "customerUN": "khader_y",
+        "totalPrice": 19.99,
+        "date": "2023-06-15T11:15:00.000Z"
+    },
+    {
+        "purchaseId": "P18",
+        "quantity": 3,
+        "itemId": "I4",
+        "customerUN": "khader_y",
+        "totalPrice": 51.75,
+        "date": "2023-07-20T14:00:00.000Z"
+    },
+    {
+        "purchaseId": "P19",
+        "quantity": 2,
+        "itemId": "I16",
+        "customerUN": "anas_s",
+        "totalPrice": 35.00,
+        "date": "2024-05-01T09:30:00.000Z"
+      },
+      {
+        "purchaseId": "P20",
+        "quantity": 1,
+        "itemId": "I21",
+        "customerUN": "anas_s",
+        "totalPrice": 18.25,
+        "date": "2023-12-26T12:45:00.000Z"
+      },
+      {
+        "purchaseId": "P21",
+        "quantity": 3,
+        "itemId": "I26",
+        "customerUN": "anas_s",
+        "totalPrice": 47.25,
+        "date": "2023-10-21T08:10:00.000Z"
+      },
+      {
+        "purchaseId": "P22",
+        "quantity": 2,
+        "itemId": "I31",
+        "customerUN": "anas_s",
+        "totalPrice": 27.50,
+        "date": "2024-03-16T14:20:00.000Z"
+      },
+      {
+        "purchaseId": "P23",
+        "quantity": 1,
+        "itemId": "I36",
+        "customerUN": "anas_s",
+        "totalPrice": 13.75,
+        "date": "2024-01-11T16:30:00.000Z"
+      },
+      {
+        "purchaseId": "P24",
+        "quantity": 3,
+        "itemId": "I13",
+        "customerUN": "anas_s",
+        "totalPrice": 45.00,
+        "date": "2023-12-06T09:45:00.000Z"
+      },
+      {
+        "purchaseId": "P25",
+        "quantity": 2,
+        "itemId": "I18",
+        "customerUN": "ali_zaid",
+        "totalPrice": 28.50,
+        "date": "2023-11-01T13:00:00.000Z"
+      },
+      {
+        "purchaseId": "P26",
+        "quantity": 1,
+        "itemId": "I23",
+        "customerUN": "ali_zaid",
+        "totalPrice": 14.25,
+        "date": "2023-06-27T07:20:00.000Z"
+      },
+      {
+        "purchaseId": "P27",
+        "quantity": 3,
+        "itemId": "I28",
+        "customerUN": "ali_zaid",
+        "totalPrice": 40.50,
+        "date": "2023-08-22T11:50:00.000Z"
+      },
+      {
+        "purchaseId": "P28",
+        "quantity": 2,
+        "itemId": "I33",
+        "customerUN": "ali_zaid",
+        "totalPrice": 26.50,
+        "date": "2023-09-17T15:10:00.000Z"
+      },
+      {
+        "purchaseId": "P29",
+        "quantity": 1,
+        "itemId": "I37",
+        "customerUN": "ali_zaid",
+        "totalPrice": 14.75,
+        "date": "2023-10-12T17:25:00.000Z"
+      },
+      {
+        "purchaseId": "P30",
+        "quantity": 3,
+        "itemId": "I14",
+        "customerUN": "ali_zaid",
+        "totalPrice": 42.00,
+        "date": "2024-03-07T10:15:00.000Z"
+      },
+      {
+        "purchaseId": "P31",
+        "quantity": 2,
+        "itemId": "I19",
+        "customerUN": "ali_zaid",
+        "totalPrice": 29.00,
+        "date": "2024-03-02T14:40:00.000Z"
+      },
+      {
+        "purchaseId": "P32",
+        "quantity": 1,
+        "itemId": "I24",
+        "customerUN": "ali_zaid",
+        "totalPrice": 15.75,
+        "date": "2024-02-26T08:05:00.000Z"
+      },
+      {
+        "purchaseId": "P33",
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 37.50,
+        "date": "2024-02-21T12:30:00.000Z"
+      },
+      {
+        "purchaseId": "P34",
+        "quantity": 2,
+        "itemId": "I34",
+        "customerUN": "ali_zaid",
+        "totalPrice": 28.00,
+        "date": "2023-06-16T16:55:00.000Z"
+      },
+      {
+        "purchaseId": "P35",
+        "quantity": 3,
+        "itemId": "I5",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date" : "2024-05-02T03:44:52.469Z"
+    },
+    {
+        "purchaseId": "P36",
+        "quantity": 3,
+        "itemId": "I5",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date" : "2023-05-30T03:44:52.469Z"
+    }, {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date" : "2023-05-30T03:44:52.469Z"
+    },  {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-05-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-06-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-07-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-08-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-09-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-10-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-11-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-12-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-01-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-02-29T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-03-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I29",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-04-30T03:44:52.469Z"
+      },  {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-05-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-06-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-07-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-08-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-09-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-10-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-11-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2023-12-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-01-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-02-29T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-03-30T03:44:52.469Z"
+      },
+      {
+        "quantity": 3,
+        "itemId": "I21",
+        "customerUN": "ali_zaid",
+        "totalPrice": 84.0,
+        "date": "2024-04-30T03:44:52.469Z"
+      }
+]

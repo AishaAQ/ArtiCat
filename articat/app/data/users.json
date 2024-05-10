@@ -1,0 +1,118 @@
+[
+    {
+        "type": "seller",
+        "username": "craftsworld_user",
+        "password": "cw_123",
+        "companyName": "CraftsWorld Inc.",
+        "bankAccount": "CW123456789"
+    },
+    {
+        "type": "seller",
+        "companyName": "CeramicArt Co.",
+        "username": "ceramicart_user",
+        "password": "ca_pass123",
+        "bankAccount": "CA987654321"
+    },
+    {
+        "type": "seller",
+        "username": "elegant_jewels",
+        "password": "el123",
+        "companyName": "Elegant Jewels Co.",
+        "bankAccount": "AG789012345"
+    },
+    {
+        "type": "seller",
+        "username": "stellar_designs",
+        "password": "ste456",
+        "companyName": "Stellar Designs Co.",
+        "bankAccount": "FA567890123"
+        
+    },
+    {
+        "type": "seller",
+        "username": "canvas_harmony",
+        "password": "canvas22",
+        "companyName": "Canvas Harmony Studios",
+        "bankAccount": "DC567263124"
+    },
+    {
+        "type": "seller",
+        "username": "artvista_creations",
+        "password": "artvista_22",
+        "companyName": "Artvista Creations",
+        "bankAccount": "DC567212324"
+    },
+    {
+        "type": "customer",
+        "username": "maria_attili",
+        "password": "ma_123",
+        "name": "Maria",
+        "surname": "Attili",
+        "shippingAddress": "465 Alasiri Street,Qatar",
+        "moneyBalance": 1000,
+        "email": "attilimaria@gmail.com",
+        "phoneNumber": "+974 33008644"
+    },
+    {
+        "type": "customer",
+        "username": "ali_zaid",
+        "password": "az_123",
+        "name": "Ali",
+        "surname": "Zaid",
+        "shippingAddress": "456 Amman,Jordan",
+        "moneyBalance": 100,
+        "email": "ali.zaid@gmail.com",
+        "phoneNumber": "+91 5550163422"
+    },
+    {
+        "type": "customer",
+        "username": "anas_s",
+        "password": "an_123",
+        "name": "Anas",
+        "surname": "Sami",
+        "shippingAddress": "123 Al Gharrafa,Qatar",
+        "moneyBalance": 5000,
+        "email": "anas@gmail.com",
+        "phoneNumber": "+974 66667777"
+    },
+
+    {
+        "type": "customer",
+        "username": "khader_y",
+        "password": "kh_123",
+        "name": "Khader",
+        "surname": "Yasser",
+        "shippingAddress": "345 Al Dafna,Qatar",
+        "moneyBalance": 1500,
+        "email": "khy@gmail.com",
+        "phoneNumber": "+974 33445566"
+    },
+
+    {
+        "type": "customer",
+        "username": "maisy",
+        "password": "daisy",
+        "name": "Mais",
+        "surname": "Sami",
+        "shippingAddress": "123 Khan Yunis,Palestine",
+        "moneyBalance": 4000,
+        "email": "mais@gmail.com",
+        "phoneNumber": "+974 66554433"
+    },
+
+    {
+        "type": "customer",
+        "username": "raghad_sk",
+        "password": "rs_123",
+        "name": "Raghad",
+        "surname": "Sami",
+        "shippingAddress": "345 Al Duhail,Qatar",
+        "moneyBalance": 3400,
+        "email": "raghad@gmail.com",
+        "phoneNumber": "+974 66653344"
+    }, {
+        "type": "admin",
+        "username": "admin",
+        "password": "a_123"
+    }
+]

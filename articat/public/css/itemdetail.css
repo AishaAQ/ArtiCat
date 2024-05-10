@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: auto; */
+}
+
+:root {
+    /* so we can add all colors here */
+    --color--bg: #f8e2e7ee;
+    --color--txt: white;
+    --color--icons: #d65f83;
+
+}
+
+main {
+
+    p {
+        padding: 1rem 0rem 0rem 2rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .item {
+
+        display: flex;
+        margin: auto auto;
+        justify-content: center;
+        width: 80%;
+
+        img {
+            width: 50%;
+            flex-grow: 1;
+            padding: 2rem;
+            border-radius: 2.5rem;
+        }
+
+        p {
+            padding: 0rem;
+        }
+
+        .details {
+            flex-grow: 3;
+            padding: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            font-size: larger;
+
+            form {
+
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                flex-grow: 1;
+                justify-content: end;
+                margin-bottom: 2rem;
+
+                div {
+
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 1rem;
+
+                }
+
+                input[type="number"] {
+                    width: 15%;
+                    padding: 0.5rem;
+                    margin-top: 0.4rem;
+                    border: 1px solid #c2c2c2;
+                    border-radius: 10px;
+                }
+
+                input[type="submit"],
+                input[type="button"] {
+                    padding: 0.6rem;
+                    margin: 0;
+                    border: var(--color--icons) solid;
+                    border-radius: 2rem;
+                    background: var(--color--icons);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+                    color: var(--color--txt);
+                    transition-duration: 0.4s;
+                    cursor: pointer;
+                    font-size: larger;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 40rem) {
+    main {
+
+        .item {
+            flex-direction: column;
+            margin: auto;
+            width: 90%;
+
+            img {
+                width: 100%;
+                align-self: center;
+                padding: 0.5rem;
+            }
+
+        }
+    }
+}

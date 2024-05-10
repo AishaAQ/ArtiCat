@@ -1,0 +1,83 @@
+[
+    {
+        "purchaseId": "P1",
+        "quantity": 2,
+        "item": {
+            "name": "Elegant Pink Vase",
+            "category": "Ceramics",
+            "image": "images/ceramics/pink_vase.png",
+            "price": 32.0,
+            "quantity": 25,
+            "description": "An elegant ceramic vase, slender and tall, in a soft pastel pink with subtle white accents. The vase features a minimalist design with a smooth, matte finish.",
+            "seller": "CraftsWorld Inc.",
+            "itemId": "I1"
+        },
+        "customer": {
+            "type": "customer",
+            "username": "maria_attili",
+            "password": "ma_123",
+            "name": "Maria",
+            "surname": "Attili",
+            "shippingAddress": "465 Alasiri Street, Doha",
+            "moneyBalance": 500,
+            "email": "attilimaria@gmail.com",
+            "phoneNumber": "974-33008644"
+        },
+        "totalPrice": 64.0,
+        "date" : "2024-03-29T03:41:59.449Z"
+    },
+    {
+        "purchaseId": "P2",
+        "quantity": 1,
+        "item": {
+            "name": "Pink Heart Teapot",
+            "category": "Ceramics",
+            "image": "images/ceramics/heart_pink_teapot.png",
+            "price": 35.0,
+            "quantity": 20,
+            "description": "A ceramic teapot, in a pastel pink color with a minimalistic white heart design. The teapot has a classic shape with a smooth, matte finish.",
+            "seller": "CraftsWorld Inc.",
+            "itemId": "I3"
+        },
+        "customer": {
+            "type": "customer",
+            "username": "maria_attili",
+            "password": "ma_123",
+            "name": "Maria",
+            "surname": "Attili",
+            "shippingAddress": "465 Alasiri Street, Doha",
+            "moneyBalance": 500,
+            "email": "attilimaria@gmail.com",
+            "phoneNumber": "974-33008644"
+        },
+        "totalPrice": 35.0,
+        "date" : "2024-03-30T03:43:50.530Z"
+    },
+    {
+        "purchaseId": "P3",
+        "quantity": 3,
+        "item": {
+            "name": "Pink Strawberry Bowl",
+            "category": "Ceramics",
+            "image": "images/ceramics/pink_bowl_strawberry.png",
+            "price": 28.0,
+            "quantity": 35,
+            "description": "A modern pastel pink bowl with a white strawberry pattern.",
+            "seller": "CeramicArt Co.",
+            "itemId": "I5"
+        },
+        "customer": {
+            "type": "customer",
+            "username": "ali_zaid",
+            "password": "az_123",
+            "name": "Ali",
+            "surname": "Zaid",
+            "shippingAddress": "456 Amman, Jordan",
+            "moneyBalance": 100,
+            "email": "ali.zaid@gmail.com",
+            "phoneNumber": "555-0202"
+        },
+        "totalPrice": 84.0,
+        "date" : "2024-03-30T03:44:52.469Z"
+    }
+]

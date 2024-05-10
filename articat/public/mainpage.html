@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtiCat</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Enter new style sheet here -->
+    <link rel="stylesheet" href="css/mainpage.css">
+</head>
+
+<body>
+    
+    <div class="page">
+
+        <!-- Header -->
+        <header class="head">
+            <img src="images/no bg logo.PNG" alt="logo" class="logo" id="logo">
+            <div class="top-bar">
+                <div class="search-box">
+                    <form id="searchForm">
+                        <input type="text" placeholder="Search for anything" class="search-bar" name="searchValue">
+                        <input type="submit" style="display: none;">
+                    </form>                    <i class="material-icons">search</i>
+                </div>
+                <button class="signInButton" id="signInBtn">Sign In</button>
+                <div class="drop-down">
+                    <i class="material-icons profile-icon hidden" id="profile-icon" onclick="showDropDown()">account_circle</i>
+                    <div class="drop-down-list hidden" id="drop-down-list"></div>
+                </div>
+       
+            </div>
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="flex">
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="mainpage.html#categories">Categories</a></li>
+                    <li><a href="mainpage.html#about">About Us</a></li>
+                    <li><a href="mainpage.html#contact">Contact Us </a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <hr>
+
+        <main class="main">
+            <!-- slide show code from w3schools -->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/slideshow/newcoll.webp" style="width:100%">
+                <div class="captiontext">ArtiCat New Collections</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/slideshow/slide2n.webp"  style="width:100%">
+                <div class="captiontext">Ceramics New Collection</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/slideshow/slide4.webp"  style="width:100%">
+                    <div class="captiontext">Paintings New Collection</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- end -->
+
+
+              <!-- featured products -->
+        <section class="featured-products" >
+            <h2>Featured Products</h2>
+            <div class="featured-container" id="featured-container"></div>
+            <input type="button" value="Shop All" id="shop-btn" ></input>
+        </section>
+
+
+            <!-- Shop by category Section -->
+            <section class="categories" id="categories">
+                <h2>Shop By Categories</h2>
+
+                <div class="grid">
+                    <section class="box b" id="Ceramics">
+                        <img alt="[Ceramics Image]" src="images/categories/ceramics.png">
+                        <h3>Ceramics</h3>
+                    </section>
+
+                    <section class="box b" id="Jewelry">
+                        <img alt="[Jewelry Image]" src="images/categories/jewelry.png">
+                        <h3>Jewelry</h3>
+                    </section>
+
+                    <section class="box b" id="Paintings">
+                        <img alt="[Paintings Image]" src="images/categories/paintings.webp">
+                        <h3>Paintings</h3>
+                    </section>
+
+                </div>
+            </section>
+      
+            <!-- about us  -->
+            <section class="us" id="about">
+                <h2 class="title">What is ArtiCat?</h2>
+
+                <div class="grid">
+                    <article class="box">
+                        <h2>Craftsmanship and Creativity</h2>
+                        <p>Welcome to ArtiCat, the top destination for wonderful handcrafted items! ArtiCat, located in
+                            the heart of the digital marketplace, is where creativity meets craftsmanship, with a
+                            carefully curated range of ceramics, jewelry, and paintings that inspire and delight.
+                        </p>
+                    </article>
+
+                    <article class="box">
+                        <h2>Diverse Range of Expression</h2>
+                        <p class="">ArtiCat values the impact of art on people's lives and spaces. Each piece in our collection
+                            is meticulously crafted by skilled artisans from all over the world, ensuring authenticity,
+                            quality, and individuality in every creation. Our wide product line includes anything from
+                            delicate porcelain vases to elaborate paintings, capturing the rich tapestry of human
+                            expression.
+                        </p>
+                    </article>
+
+                    <article class="box">
+                        <h2>Community and Connection</h2>
+                        <p>Join our community of artisans and enthusiasts who respect quality craftsmanship and
+                            innovation. ArtiCat is more than simply a marketplace; it is a movement dedicated to
+                            promoting independent creators and self-made businesses and connecting makers and customers.
+                            Enjoy the thrill of finding one-of-a-kind treasures that speak to your spirit. Whether
+                            you're buying for a particular event or simply seeking self-expression, ArtiCat is here to
+                            inspire and encourage you on your journey.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <!-- Contact -->
+            <section class="contact" id="contact">
+                <h3>Have a question? Contact Us!</h3>
+
+                <div class="socials">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="https://x.com/articat_?s=21&t=R03n2eSaEpdfP34lExAYdQ" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/articat_2024?igsh=MWZwZGQ3YXVucHk5OQ%3D%3D&utm_source=qr" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+
+                    <!-- <a href="#" class="fa fa-xing"></a> -->
+                </div>
+                
+            </section>
+
+            <p>&copy; 2024 ArtiCat</p>
+            
+        </footer>
+    </div>
+    <script src="js/search.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/mainpage.js"></script>
+    <script src="js/addItem.js"></script>
+</body>
+
+</html>
