@@ -33,3 +33,5 @@ export async function POST(request) {
         status: 200
     })
 }
+
+export const dynamic = "force-dynamic";
