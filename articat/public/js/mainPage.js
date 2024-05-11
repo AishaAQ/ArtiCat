@@ -1,6 +1,5 @@
 //get the ref of element we want to interact with
 //select more than one element 
-
 const categoriesB = document.querySelectorAll('#Ceramics, #Paintings, #Jewelry');
 //add event listener
 categoriesB.forEach(c => {
@@ -23,9 +22,9 @@ function handleShopAll() {
 
 async function addFeatured(){
 
-  const response = await fetch(`api/items?featured=true`,{ method: 'GET'})
+  const response = await fetch(`/api/items?featured=true`,{ method: 'GET'})
   let featuredItems = await response.json()
-  const itemsHTML = Object.entries(featuredItems).map(item => itemToHTML(item)).join(' ')
+  const itemsHTML = featuredItems.map(item => itemToHTML(item)).join(' ')
   featuredCC.innerHTML = itemsHTML
 }
 
