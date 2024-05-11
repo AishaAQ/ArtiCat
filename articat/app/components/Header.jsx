@@ -10,7 +10,7 @@ export default function Header() {
     function onClick() {
         
         delete localStorage.currentUser
-        router.push('/mainPage.html')
+        router.push('./mainPage.html')
     }
 
   return (
