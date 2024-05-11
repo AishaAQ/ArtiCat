@@ -64,6 +64,7 @@ export default function MonthlyRevenuePerCategory({ monthlyCategoryRevenue }) {
 
   useEffect(() => {
     if (monthlyCategoryRevenue) {
+      console.log(monthlyCategoryRevenue);
       setData(
         monthlyCategoryRevenue.map(row => {
           row.MONTH = formatMonth(row.MONTH)

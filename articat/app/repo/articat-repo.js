@@ -339,7 +339,7 @@ export default class articatRepo {
         try {
 
             return await prisma.$queryRaw`
-                SELECT sum("totalPrice") "totalRevenue", "category", STRFTIME('%m-01-%Y',DATETIME(ROUND("date" / 1000), 'unixepoch')) "MONTH" FROM "Purchase" , "Item" WHERE "Purchase"."itemId"="Item"."itemid" AND DATETIME(ROUND("date" / 1000), 'unixepoch') > date(date(),'-12 months') GROUP BY "MONTH","category" ORDER BY "date"
+                SELECT sum("totalPrice") "totalRevenue", "category", TO_CHAR("date",'MM-DD-YYYY') "MONTH" FROM "Purchase" , "Item" WHERE "Purchase"."itemId"="Item"."itemid" GROUP BY "MONTH","category" ORDER BY "date"
             `
 
         } catch (error) {
