@@ -45,7 +45,6 @@ export default async function Statistics() {
           <div className={styles.centered}>
             <MonthlyRevenuePerCategory monthlyCategoryRevenue={monthlyCategoryRevenue} />
           </div>
-          
   </div>*/}
 
         <h2 className={styles.charttitle} id="topProducts">Top 3 Most Bought Products</h2>
