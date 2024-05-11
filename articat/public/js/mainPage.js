@@ -22,8 +22,9 @@ function handleShopAll() {
 
 async function addFeatured(){
 
-  const response = await fetch(`/api/items?featured=true`,{ method: 'GET'})
+  const response = await fetch(`api/items?featured=true`,{ method: 'GET'})
   let featuredItems = await response.json()
+  console.log(featuredItems);
   const itemsHTML = featuredItems.map(item => itemToHTML(item)).join(' ')
   featuredCC.innerHTML = itemsHTML
 }
