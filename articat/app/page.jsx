@@ -4,7 +4,8 @@ import React from 'react'
 
 export default function Home() {
   const router = useRouter()
+  useEffect(() => {router.push('/mainpage.html')},[])
   return (
-    router.push('/mainpage.html')
+    <></>
   )
 }
