@@ -334,19 +334,32 @@ export default class articatRepo {
         }
     }
 
-    // //Stat4: Monthly revenue of each category
-    // async getMonthlyRevenueOfProductsByCategory() {
+    //Stat4: Monthly revenue of each category
+    async getMonthlyRevenueOfProductsByCategory() {
 
-    //     try {
+        try {
 
-    //         return await prisma.$queryRaw`
-    //             SELECT sum("totalPrice") "totalRevenue", "category", STRFTIME('%m-01-%Y',DATETIME(ROUND("date" / 1000), 'unixepoch')) "MONTH" FROM "Purchase" , "Item" WHERE "Purchase"."itemId"="Item"."itemid" AND DATETIME(ROUND("date" / 1000), 'unixepoch') > date(date(),'-12 months') GROUP BY "MONTH","category" ORDER BY "date"
-    //         `
+            // return await prisma.$queryRaw`
+            //     SELECT sum("totalPrice") "totalRevenue", "category", STRFTIME('%m-01-%Y',DATETIME(ROUND("date" / 1000), 'unixepoch')) "MONTH" FROM "Purchase" , "Item" WHERE "Purchase"."itemId"="Item"."itemid" AND DATETIME(ROUND("date" / 1000), 'unixepoch') > date(date(),'-12 months') GROUP BY "MONTH","category" ORDER BY "date"
+            // `
 
-    //     } catch (error) {
-    //         return { error: error.message };
-    //     }
-    // }
+            return await prisma.$queryRaw`
+    SELECT 
+        SUM("totalPrice") AS "totalRevenue", 
+        "category", 
+        TO_CHAR(TO_TIMESTAMP("date" / 1000), 'MM-01-YYYY') AS "MONTH"
+    FROM "Purchase"
+    JOIN "Item" ON "Purchase"."itemId" = "Item"."itemid"
+    WHERE TO_TIMESTAMP("date" / 1000) > CURRENT_DATE - INTERVAL '12 months'
+    GROUP BY "MONTH", "category"
+    ORDER BY MIN(TO_TIMESTAMP("date" / 1000));
+`;
+
+
+        } catch (error) {
+            return { error: error.message };
+        }
+    }
 
     //Stat5: Top 5 Most Clicked Products
     async getTopFiveMostClickedProducts() {
