@@ -334,19 +334,19 @@ export default class articatRepo {
         }
     }
 
-    //Stat4: Monthly revenue of each category
-    async getMonthlyRevenueOfProductsByCategory() {
+    // //Stat4: Monthly revenue of each category
+    // async getMonthlyRevenueOfProductsByCategory() {
 
-        try {
+    //     try {
 
-            return await prisma.$queryRaw`
-                SELECT sum("totalPrice") "totalRevenue", "category", STRFTIME('%m-01-%Y',DATETIME(ROUND("date" / 1000), 'unixepoch')) "MONTH" FROM "Purchase" , "Item" WHERE "Purchase"."itemId"="Item"."itemid" AND DATETIME(ROUND("date" / 1000), 'unixepoch') > date(date(),'-12 months') GROUP BY "MONTH","category" ORDER BY "date"
-            `
+    //         return await prisma.$queryRaw`
+    //             SELECT sum("totalPrice") "totalRevenue", "category", STRFTIME('%m-01-%Y',DATETIME(ROUND("date" / 1000), 'unixepoch')) "MONTH" FROM "Purchase" , "Item" WHERE "Purchase"."itemId"="Item"."itemid" AND DATETIME(ROUND("date" / 1000), 'unixepoch') > date(date(),'-12 months') GROUP BY "MONTH","category" ORDER BY "date"
+    //         `
 
-        } catch (error) {
-            return { error: error.message };
-        }
-    }
+    //     } catch (error) {
+    //         return { error: error.message };
+    //     }
+    // }
 
     //Stat5: Top 5 Most Clicked Products
     async getTopFiveMostClickedProducts() {

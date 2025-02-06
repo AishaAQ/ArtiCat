@@ -46,13 +46,13 @@ export default async function Statistics() {
             <MonthlyRevenuePerCategory monthlyCategoryRevenue={monthlyCategoryRevenue} />
           </div>
         </div>
-
+{/** 
         <h2 className={styles.charttitle} id="topProducts">Top 3 Most Bought Products</h2>
         <p className={styles.chartp}>-Over the last 6 months-</p>
         <div className={styles.top3}>
           <Top3Chart top3Items={itemsdetails} className={styles.chartSpace} />
           <Top3Details top3Items={itemsdetails} />
-        </div>
+        </div>*/}
 
         <div className={styles.twoCards}>
           <div id="country">
