@@ -52,20 +52,23 @@ export default class articatRepo {
         }
 
     }
-    
+
     async getSearchItems(searchValue) {
         // const search = searchValue.toLowerCase()
         
         try {
 
-            return await prisma.item.findMany({
-                where: {
-                    quantity: { gt: 0 },
-                    name: {
-                        ILIKE: `%${searchValue.trim()}%`
+                return await prisma.item.findMany({
+                    where: {
+                        name: {
+                            contains: searchValue,  // Search term, trims extra spaces
+                            mode: 'insensitive'  // Case-insensitive search (PostgreSQL-specific)
+                    },
+                    quantity: {
+                        gt: 0  // Ensure the quantity is greater than 0
                     }
-                }
-            });
+            }
+        });
         } catch (error) {
             return { error: error.message }
         }

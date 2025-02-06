@@ -11,8 +11,7 @@ export async function GET(request) {
     if (category) {
         items = await ArtiCatRepo.getItems(category)
     } else if (searchValue) {
-        // items = await ArtiCatRepo.getSearchItems(searchValue)
-        items = await ArtiCatRepo.getAllItems()
+        items = await ArtiCatRepo.getSearchItems(searchValue)
     } else if (featured) {
         items = await ArtiCatRepo.getFeatured()
     } else {
