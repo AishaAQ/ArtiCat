@@ -1,8 +1,9 @@
 import fs from 'fs-extra'
 import path from 'path'
-import { PrismaClient } from '@prisma/client'
+// import { PrismaClient } from '@prisma/client'
+import prisma from '../lib/prisma.js';
 
-const prisma = new PrismaClient()
+// const prisma = new PrismaClient()
 const usersPath = path.join(process.cwd(), 'app/data/users.json')
 const itemsPath = path.join(process.cwd(), 'app/data/items.json')
 const purchasesPath = path.join(process.cwd(), 'app/data/purchases.json')

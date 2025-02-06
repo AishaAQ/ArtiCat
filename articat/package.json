@@ -10,7 +10,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@prisma/client": "^5.13.0",
+    "@prisma/client": "^5.22.0",
     "cors": "^2.8.5",
     "cuid": "^3.0.0",
     "fs-extra": "^11.2.0",
@@ -23,7 +23,7 @@
     "recharts": "^2.12.7"
   },
   "devDependencies": {
-    "prisma": "^5.13.0"
+    "prisma": "^5.22.0"
   },
   "type": "module"
 }
