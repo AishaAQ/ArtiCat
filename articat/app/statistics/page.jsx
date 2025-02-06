@@ -19,7 +19,7 @@ export default async function Statistics() {
   const itemids = await ArtiCatRepo.getTop3PurchasedProducts()
   const itemsdetails = await ArtiCatRepo.getitemsDetails(itemids)
   const customersCount = await ArtiCatRepo.getTotalNumberOfCustomersPerCountry()
-  const monthlyCategoryRevenue = await ArtiCatRepo.getMonthlyRevenueOfProductsByCategory()
+  // const monthlyCategoryRevenue = await ArtiCatRepo.getMonthlyRevenueOfProductsByCategory()
   const clicksOfItem = await ArtiCatRepo.getTopFiveMostClickedProducts()
 
   const top3CompanyUN = await ArtiCatRepo.getTop3Companies()
