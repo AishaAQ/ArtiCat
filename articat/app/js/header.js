@@ -17,7 +17,7 @@ signInBtn.addEventListener('click', signIn)
 logo.addEventListener('click', goHome)
 
 function goHome() {
-    window.location.href = "mainPage.html"
+    window.location.href = "mainpage.html"
 }
 
 function signIn() {

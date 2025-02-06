@@ -41,7 +41,7 @@ async function showDropDown() {
         : list = [
             {   name: 'Shopping Wallet',    page: 'wallet.html' }, 
             {   name: 'Purchase History',   page: 'history.html'    },
-            {   name: 'Sign Out',   page: 'mainPage.html'   }
+            {   name: 'Sign Out',   page: 'mainpage.html'   }
         ]
         
         dropDownList.innerHTML = list.map(option => optionToHTML(option)). join(' ')
@@ -52,7 +52,7 @@ async function showDropDown() {
 
 function optionToHTML(option) {
 
-    if (option.name === "Sign Out") return `<a href="mainPage.html" onclick='signOut()'>${option.name}</a>`
+    if (option.name === "Sign Out") return `<a href="mainpage.html" onclick='signOut()'>${option.name}</a>`
 
     return `
         <a href="${option.page}">${option.name}</a>
