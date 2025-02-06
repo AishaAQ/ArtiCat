@@ -347,12 +347,12 @@ export default class articatRepo {
     SELECT 
         SUM("totalPrice") AS "totalRevenue", 
         "category", 
-        TO_CHAR(TO_TIMESTAMP("date" / 1000), 'MM-01-YYYY') AS "MONTH"
+        TO_CHAR("date", 'MM-01-YYYY') AS "MONTH"
     FROM "Purchase"
     JOIN "Item" ON "Purchase"."itemId" = "Item"."itemid"
-    WHERE TO_TIMESTAMP("date" / 1000) > CURRENT_DATE - INTERVAL '12 months'
+    WHERE "date" > CURRENT_DATE - INTERVAL '12 months'
     GROUP BY "MONTH", "category"
-    ORDER BY MIN(TO_TIMESTAMP("date" / 1000));
+    ORDER BY "date";
 `;
 
 
