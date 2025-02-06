@@ -63,13 +63,15 @@ export default function MonthlyRevenuePerCategory({ monthlyCategoryRevenue }) {
 };
 
   useEffect(() => {
+
+    console.log(monthlyCategoryRevenue)
     if (monthlyCategoryRevenue) {
-      setData(
-        monthlyCategoryRevenue.map(row => {
-          row.MONTH = formatMonth(row.MONTH)
-        })
+      // setData(
+      //   monthlyCategoryRevenue.map(row => {
+      //     row.MONTH = formatMonth(row.MONTH)
+      //   })
         
-      )
+      // )
       const uniqueMonths = getUniqueMonths(monthlyCategoryRevenue)
       const data = formatData(uniqueMonths,monthlyCategoryRevenue)
 
@@ -78,7 +80,7 @@ export default function MonthlyRevenuePerCategory({ monthlyCategoryRevenue }) {
       )
       
     }
-    console.log(monthlyCategoryRevenue)
+    
   }, [monthlyCategoryRevenue]);
 
   if (!monthlyCategoryRevenue) {

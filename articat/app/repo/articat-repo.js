@@ -344,16 +344,16 @@ export default class articatRepo {
             // `
 
             return await prisma.$queryRaw`
-    SELECT 
-        SUM("totalPrice") AS "totalRevenue", 
-        "category", 
-        TO_CHAR("date", 'MM-01-YYYY') AS "MONTH"
-    FROM "Purchase"
-    JOIN "Item" ON "Purchase"."itemId" = "Item"."itemid"
-    WHERE "date" > CURRENT_DATE - INTERVAL '12 months'
-    GROUP BY "MONTH", "category"
-    ORDER BY "date";
-`;
+            SELECT 
+                SUM("totalPrice") AS "totalRevenue", 
+                "category", 
+                TO_CHAR("date", 'Mon-YYYY') AS "MONTH"
+            FROM "Purchase"
+            JOIN "Item" ON "Purchase"."itemId" = "Item"."itemid"
+            WHERE "date" > CURRENT_DATE - INTERVAL '12 months'
+            GROUP BY "MONTH", "category"
+            ORDER BY MIN("date") DESC;  -- Order by the minimum date for each group
+        `;
 
 
         } catch (error) {
