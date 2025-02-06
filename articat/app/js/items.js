@@ -17,6 +17,7 @@ async function handlePageLoad() {
    
     try {
         let itemsHTML = ''
+        console.log(`Search ${search}`)
         const filteredItems = await getInitialFilteredItems()
         
         if (!filteredItems.length) noItemsErrorMsg()
@@ -58,6 +59,7 @@ async function getInitialFilteredItems() {
         dropdown.classList.add('hidden')
         const response = await fetch(`api/items?searchValue=${search}`, {
             method: 'GET'})
+        console.log(response)
         filteredItems = await response.json()
     }
 
