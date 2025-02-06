@@ -11,6 +11,7 @@ import TopClicksDetails from "@/app/components/TopClicksDetails";
 import Header from "@/app/components/Header"
 import articatRepo from "@/app/repo/articat-repo"
 import TopContributingCompanies from "@/app/components/TopContributingCompanies";
+import { useEffect } from "react";
 
 const ArtiCatRepo = new articatRepo()
 
@@ -26,11 +27,13 @@ export default async function Statistics() {
   const top3Companies = await ArtiCatRepo.getCompanyDetails(top3CompanyUN)
 
 
-
+  useEffect(() => {
+    console.log(monthlyCategoryRevenue);
+  }, [monthlyCategoryRevenue]);
 
   return (
     <>
-     {console.log(monthlyCategoryRevenue)}
+     
       <Header />
 
       <div className={styles.padding}>
