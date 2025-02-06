@@ -59,23 +59,8 @@ async function getInitialFilteredItems() {
         console.log(search)
         title.classList.add('hidden')
         dropdown.classList.add('hidden')
-        try {
-            const items = await getSearchItems(searchValue); // Example function call
-            res.status(200).json(items);
-        } catch (error) {
-            res.status(500).json({ error: error.message });
-        }
-        try {
-            try {
-                const items = await getSearchItems(searchValue); // Example function call
-                res.status(200).json(items);
-            } catch (error) {
-                res.status(500).json({ error: error.message });
-            } // Example function call
-            //res.status(200).json(items);
-        } catch (error) {
-            res.status(500).json({ error: error.message });
-        }
+        const response = await fetch(`api/items?searchValue=${search}`, {
+            method: 'GET'})
         filteredItems = await response.json()
     }
 
