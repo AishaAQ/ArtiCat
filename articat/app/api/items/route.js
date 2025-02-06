@@ -7,7 +7,8 @@ export async function GET(request) {
     const category = searchParams.get('category')
     const searchValue = searchParams.get('searchValue')
     const featured = searchParams.get('featured')
-    
+    console.log(`api searchparams ${category}`)
+    console.log(`api searchValue ${searchValue}`)
     if (category) {
         items = await ArtiCatRepo.getItems(category)
     } else if (searchValue) {

@@ -53,14 +53,14 @@ export default class articatRepo {
 
     }
     async getSearchItems(searchValue) {
-        const search = searchValue.toLowerCase()
+        // const search = searchValue.toLowerCase()
         try {
 
             return await prisma.item.findMany({
                 where: {
                     quantity: { gt: 0 },
                     name: {
-                        contains: search
+                        ILIKE: `%${searchValue}%`
                     }
                 }
             })
