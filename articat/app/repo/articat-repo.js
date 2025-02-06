@@ -349,10 +349,10 @@ export default class articatRepo {
                 "category", 
                 TO_CHAR("date", 'Mon-YYYY') AS "MONTH"
             FROM "Purchase"
-            JOIN "Item" ON "Purchase"."itemId" = "Item"."itemid"
+            JOIN "Item" ON "Purchase"."itemId" = "Item"."itemId"
             WHERE "date" > CURRENT_DATE - INTERVAL '12 months'
             GROUP BY "MONTH", "category"
-            ORDER BY MIN("date") DESC;  -- Order by the minimum date for each group
+            ORDER BY MIN("date");  -- Order by the minimum date for each group
         `;
 
 
