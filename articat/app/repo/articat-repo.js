@@ -52,11 +52,10 @@ export default class articatRepo {
         }
 
     }
+    
     async getSearchItems(searchValue) {
         // const search = searchValue.toLowerCase()
-        if (!searchValue || searchValue.trim() === '') {
-            return { error: 'Search value cannot be empty' };
-        }
+        
         try {
 
             return await prisma.item.findMany({
@@ -65,9 +64,8 @@ export default class articatRepo {
                     name: {
                         ILIKE: `%${searchValue.trim()}%`
                     }
-                },
-                log: ['query']
-            })
+                }
+            });
         } catch (error) {
             return { error: error.message }
         }
